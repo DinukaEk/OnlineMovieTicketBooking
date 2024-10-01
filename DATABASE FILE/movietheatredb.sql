@@ -46,11 +46,11 @@ CREATE TABLE `tbl_bookings` (
 --
 
 INSERT INTO `tbl_bookings` (`book_id`, `ticket_id`, `t_id`, `user_id`, `show_id`, `screen_id`, `no_seats`, `amount`, `ticket_date`, `date`, `status`) VALUES
-(12, 'BKID6369842', 4, 4, 17, 3, 1, 380, '2021-04-15', '2021-04-15', 1),
-(13, 'BKID2313964', 6, 5, 21, 6, 4, 2400, '2021-04-16', '2021-04-15', 1),
+(12, 'BKID6369842', 4, 4, 17, 3, 2, 760, '2021-04-15', '2021-04-15', 1),
+(13, 'BKID2313964', 6, 5, 21, 6, 2, 1200, '2021-04-16', '2021-04-15', 1),
 (14, 'BKID1766021', 6, 5, 22, 6, 2, 1200, '2021-04-16', '2021-04-16', 1),
 (16, 'BKID6798053', 6, 6, 20, 6, 12, 7200, '2021-09-17', '2021-09-17', 1),
-(17, 'BKID9619503', 6, 6, 21, 6, 1, 600, '2021-09-18', '2021-09-18', 1),
+(17, 'BKID9619503', 6, 6, 21, 6, 3, 1800, '2021-09-18', '2021-09-18', 1),
 (18, 'BKID4489546', 6, 6, 23, 6, 1, 600, '2021-09-19', '2021-09-18', 1);
 
 -- --------------------------------------------------------
@@ -92,7 +92,7 @@ INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) V
 (12, 2, 'sachin@gmail.com', 'password', 2),
 (15, 14, 'theater3', 'PWD12', 1),
 (17, 4, 'userz@gmail.com', 'password', 2),
-(18, 6, 'theater4', 'PWD12345', 1),
+(18, 6, 'theaterNew', 'PWD12345', 1),
 (19, 5, 'james@gmail.com', 'password', 2),
 (20, 6, 'abc@gmail.com', '12345678', 2);
 
@@ -119,7 +119,7 @@ CREATE TABLE `tbl_movie` (
 --
 
 INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status`) VALUES
-(1, 3, 'The Invisible Man', 'Elisabeth Moss, Oliver Jackson-Cohen, Aldis Hodge, Storm Reid', 'Cecilia\'s abusive ex-boyfriend fakes his death and becomes invisible to stalk and torment her. She begins experiencing strange events and decides to hunt down the truth on her own.', '2020-03-04', 'images/tim.jpg', 'https://www.youtube.com/watch?v=WO_FJdiY9dA', 0),
+(1, 3, 'Deadpool & Wolverine', 'Ryan Reynolds, Hugh Jackman, Emma Corrin', 'Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.', '2024-07-25', 'images/tim.jpg', 'https://www.youtube.com/watch?v=73_1biulkYk', 0),
 (11, 6, 'Cherry', 'Tom Holland, Ciara Bravo, Harry Holland, Kelli Berglund', 'Cherry (Tom Holland) drifts from college dropout to army medic in Iraq-anchored only by his one true love, Emily (Ciara Bravo). But after returning from the war with PTSD, his life spirals into drugs.', '2021-03-01', 'images/cherry.jpg', 'https://www.youtube.com/watch?v=H5bH6O0bErk', 0),
 (12, 6, 'Godzilla vs. Kong', 'Millie Bobby Brown, Alexander Skarsgard, Rebecca Hall', 'The initial confrontation between the two titans -- instigated by unseen forces -- is only the beginning of the mystery that lies deep within the core of the planet.', '2021-03-31', 'images/gvkpster.jpg', 'https://www.youtube.com/watch?v=odM92ap8_c0', 0),
 (13, 6, 'Outside the Wire', 'Anthony Mackie, Damson Idris, Emily Beecham', 'In the near future, a drone pilot sent into a war zone finds himself paired up with a top-secret android officer on a mission to stop a nuclear attack.', '2021-01-28', 'images/otw.jpg', 'https://www.youtube.com/watch?v=u8ZsUivELbs', 0),
